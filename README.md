@@ -1,2 +1,1 @@
-# s2j-query-pinned-service
-s2j-query-pinned-service
+# S2J Query Pinned Service
