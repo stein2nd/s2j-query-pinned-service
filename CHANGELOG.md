@@ -2,6 +2,18 @@
 
 ## unreleased
 
+## 0.0.1 - 2026-09-29
+
+### Added
+
+* 確定前のサービス仕様 `docs_mod/service_spec.md` を追加 (クエリーループでの一覧表示時にピン留めを優先し、残りを別条件で並べ替える。WordPress 非依存)
+* `docs_mod/` に概要、コンセプト、設計原則、アーキテクチャー、実装タスク、実装状況、テスト仕様、テスト結果の文書枠を追加
+
+### Changed
+
+* `docs_mod/specs.md` からサービス仕様への参照を追加
+* `.textlintrc.json` の allowlist に `kis-wordpress`、`s2j-query-pinned-service`、`s2j-content-dates-service` 等を追加
+
 ## 0.0.1 - 2026-09-28
 
 ### Added
