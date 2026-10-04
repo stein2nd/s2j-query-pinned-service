@@ -2,6 +2,14 @@
 
 ## unreleased
 
+## 0.0.1 - 2026-10-04
+
+### Changed
+
+* `docs_mod/service_spec.md` で呼び出し側を [S2J Query Pinned](https://github.com/stein2nd/s2j-query-pinned) に確定し、プラグイン仕様への参照を追加。個別ピンのメタ名は `_s2j_pinned`
+* プラグインの役割を、管理画面、オプション、メタ、Archive の `WP_Query` に限定
+* `@s2j/docs-linter` を ^1.0.27に更新
+
 ## 0.0.1 - 2026-10-03
 
 ### Changed

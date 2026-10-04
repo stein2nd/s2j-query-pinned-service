@@ -76,6 +76,8 @@ kis-core に抱え込まない判断も Content Dates と同じです。横断�
 
 ## プラグインの責務 (境界。詳細はプラグイン仕様)
 
+プラグイン仕様の詳細は [S2J Query Pinned の docs_mod/specs.md](https://github.com/stein2nd/s2j-query-pinned/blob/main/docs_mod/specs.md) です。
+
 指定 UI は、管理画面の **標準テーブル** (`WP_List_Table` 相当) とします。1行 = 1コンテンツタイプです。見出しは「カスタム投稿タイプ」ではなく **コンテンツタイプ** です。Content Dates の表と同型です。
 
 | 表示名 | タイプ | ピン留めチェックを出す | Archive にピン有無の絞り込み / ソートを足す |
@@ -96,7 +98,7 @@ kis-core に抱え込まない判断も Content Dates と同じです。横断�
 
 固定記事を CPT ではないからと別画面にせず、`page` を1行足します。Archive 列は、効かないチェックを置かず無効化します。
 
-プラグインはテーブルの状態を設定レコードに落とし、本ライブラリに渡します。メタ名は KIS 専用の `_kis_pinned` ではなく、S2J 境界に合わせた `_s2j_pinned` 等を検討します (確定はプラグイン仕様)。
+プラグインはテーブルの状態を設定レコードに落とし、本ライブラリに渡します。個別のピンのメタ名は `_s2j_pinned` です。
 
 上限を超えてピンしようとした時点で、その操作は弾きます。日付の新しい順で既存ピンを切り詰めることはしません。上限を超えた ID 列は、ライブラリに渡しません。
 
@@ -128,7 +130,7 @@ kis-core に抱え込まない判断も Content Dates と同じです。横断�
 | 名称 | 種別 | 役割 |
 | --- | --- | --- |
 | **本ライブラリ** | Composer | ピン優先の ID 列組立、上限、ページング |
-| **S2J Query Pinned** (仮) | WP プラグイン | 管理画面、オプション、メタ、Archive の `WP_Query`、ブロック、メディア UI |
+| [S2J Query Pinned](https://github.com/stein2nd/s2j-query-pinned) | WP プラグイン | 管理画面、オプション、メタ、Archive の `WP_Query` |
 | [S2J Content Dates Service](https://github.com/stein2nd/s2j-content-dates-service.git) | Composer | 非ピン集合の更新日ソート等。本ライブラリとは独立 |
 | [kis-wordpress](https://github.com/stein2nd/kis-wordpress.git) | モノレポ | サイト専用プラグイン群。ピン機能は kis-core に抱え込まない |
 | [kis2026_base](https://github.com/stein2nd/kis2026_base.git) | テーマ | 見た目。一覧の正はプラグイン + 本ライブラリ |
@@ -159,3 +161,4 @@ kis-core に抱え込まない判断も Content Dates と同じです。横断�
 | 2026-10-01 | ピン同士の順序は日付の新しい順、と決定 |
 | 2026-10-01 | ピン上限はアーカイブ表示件数の1/2 (切り捨て)。固定の初期値3とハード上限は持たず、設定画面に「2以上」の注意を常時出す、と決定 |
 | 2026-10-01 | 上限超過のピンは操作時点で弾く。外すピンはダイアログで選ばせ、足りない件数を確定のそばに出す、と決定 |
+| 2026-10-04 | 呼び出し側プラグイン [s2j-query-pinned](https://github.com/stein2nd/s2j-query-pinned) の仕様ドラフトを当該 repo に書いた。個別ピンのメタ名は `_s2j_pinned` |
