@@ -2,6 +2,12 @@
 
 ## unreleased
 
+## 0.0.1 - 2026-10-08
+
+### Changed
+
+* `docs_mod/service_spec.md` の「次」を「下記」、「とき」を「場合」に言い換える
+
 ## 0.0.1 - 2026-10-05
 
 ### Changed
