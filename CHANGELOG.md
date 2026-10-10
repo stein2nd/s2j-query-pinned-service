@@ -2,6 +2,12 @@
 
 ## unreleased
 
+## 0.0.1 - 2026-10-10
+
+### Changed
+
+* `docs_mod/service_spec.md` の実装順。「本 repo へ寄せる」を「本 repo に寄せる」に修正
+
 ## 0.0.1 - 2026-10-08
 
 ### Changed

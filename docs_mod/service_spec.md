@@ -141,7 +141,7 @@ kis-core に抱え込まない判断も Content Dates と同じです。横断�
 2. S2J Query Pinned プラグインが Composer で require し、テーブル UI とクエリーをつなぐ。
 3. 非ピンの更新日ソートがいる画面では、プラグインが Content Dates の結果を本ライブラリに渡す。
 4. KIS サイトでは当該プラグインを有効化し、kis-news 等と共用する。
-5. 旧案の `packages/query-pinned-service/` 仮置きは、本 repo へ寄せる (モノレポ仕様の更新は kis-wordpress 側)。
+5. 旧案の `packages/query-pinned-service/` 仮置きは、本 repo に寄せる (モノレポ仕様の更新は kis-wordpress 側)。
 
 ## 決定
 
