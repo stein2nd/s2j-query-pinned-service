@@ -2,6 +2,14 @@
 
 ## unreleased
 
+## 0.0.1 - 2026-10-15
+
+### Changed
+
+* `@s2j/docs-linter` を ^1.0.29に更新
+* `composer.lock` の開発用依存を更新 (phpstan v2.3.1、phpunit v13.4.2、php-code-coverage v14.4.1、php-text-template v6.0.1、sebastian/version v7.0.1)
+* `.textlintrc.json` の allowlist に `#status-…` を追加
+
 ## 0.0.1 - 2026-10-10
 
 ### Changed
