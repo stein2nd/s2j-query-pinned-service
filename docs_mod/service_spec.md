@@ -12,6 +12,8 @@
 
 本ライブラリは **WordPress 非依存** です。WP フック、設定画面、`WP_Query` の実行は扱いません。
 
+実行環境の PHP は **8.3以上** とします ([WordPress 必須要件](https://ja.wordpress.org/about/requirements/)の推奨に合わせる)。
+
 Query Loop ブロック単体では、先頭固定と残りの独立したソート / フィルターを同時に表現しづらい、というのが出発点です。
 
 ## 非目標 (本ライブラリ)
@@ -164,3 +166,4 @@ kis-core に抱え込まない判断も Content Dates と同じです。横断�
 | 2026-10-04 | 呼び出し側プラグイン [s2j-query-pinned](https://github.com/stein2nd/s2j-query-pinned) の仕様ドラフトを当該 repo に書いた。個別ピンのメタ名は `_s2j_pinned` |
 | 2026-10-05 | 設定の表には、`show_ui` だけで `public` ではない CPT も含む、と記録 |
 | 2026-10-05 | メディアライブラリのピン留め列はプラグインが初版から出す。ライブラリは列を知らない、と記録 |
+| 2026-10-24 | 実行環境 PHP の下限を v8.3にそろえる (WordPress 必須要件に合わせる) |

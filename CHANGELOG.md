@@ -2,6 +2,16 @@
 
 ## unreleased
 
+## 0.0.1 - 2026-10-24
+
+### Changed
+
+* 対応 PHP の下限を v8.3に引き上げ (`composer.json`、`phpcs.xml.dist`)。[WordPress 必須要件](https://ja.wordpress.org/about/requirements/) に合わせる
+* `.github/workflows/docs-lint.yml` に PHP v8.3の Composer 検証ジョブを追加
+* `docs_mod/service_spec.md` に実行環境 PHP v8.3以上を記載
+* `package.json` に PHP lint / テスト用 npm スクリプトを追加
+* `@s2j/docs-linter` を ^1.0.30に更新
+
 ## 0.0.1 - 2026-10-15
 
 ### Changed
