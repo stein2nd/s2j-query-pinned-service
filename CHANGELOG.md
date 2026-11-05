@@ -2,6 +2,13 @@
 
 ## unreleased
 
+## 0.0.1 - 2026-11-05
+
+### Changed
+
+* `@s2j/docs-linter` を ^1.0.32に更新
+* `composer.lock` の開発用依存を更新 (phpstan v2.3.5、phpunit v13.4.6、php-code-coverage v14.5.1)
+
 ## 0.0.1 - 2026-10-29
 
 ### Changed
