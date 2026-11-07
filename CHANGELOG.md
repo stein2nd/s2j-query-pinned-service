@@ -2,6 +2,12 @@
 
 ## unreleased
 
+## 0.0.1 - 2026-11-07
+
+### Changed
+
+* `.github/workflows/docs-lint.yml` のランナーを `ubuntu-24.04` に固定。`actions/checkout` / `actions/setup-node` を v5 に更新し、Node を v24に (非推奨 Annotation 対応)
+
 ## 0.0.1 - 2026-11-05
 
 ### Changed
